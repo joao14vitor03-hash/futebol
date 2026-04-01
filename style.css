@@ -1,70 +1,131 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #e8f5e9;
+/* Configurações Globais */
+* {
     margin: 0;
-    color: #1b5e20;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #2e7d32;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barra de Navegação */
+.navbar {
+    background-color: #1a1a1a;
     color: white;
-    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header de Impacto */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://unsplash.com');
+    background-size: cover;
+    background-position: center;
+    color: white;
     text-align: center;
-    border-bottom: 5px solid #1b5e20;
+    padding: 60px 20px;
 }
 
+/* Card de Jogo Moderno */
 .container {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 10px;
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
 }
 
-/* Estilo do Placar */
-.card-jogo {
+.section-title {
+    margin-bottom: 20px;
+    border-left: 5px solid #2e7d32;
+    padding-left: 10px;
+}
+
+.match-card {
     background: white;
+    border-radius: 12px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin-bottom: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
 }
 
-.time {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+.team {
+    text-align: center;
+    flex: 1;
 }
 
-.placar {
-    font-size: 2rem;
+.team img {
+    width: 60px;
+    display: block;
+    margin: 0 auto 10px;
 }
 
-.placar span {
-    font-size: 1rem;
-    color: #888;
-}
+.team span { font-weight: bold; font-size: 1.1rem; }
 
-/* Botão Estilo Chuteira */
-.btn-futebol {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #2e7d32;
+.vs {
+    background: #2e7d32;
     color: white;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 5px 15px;
+    border-radius: 20px;
     font-weight: bold;
-    transition: 0.3s;
 }
 
-.btn-futebol:hover {
-    background-color: #1b5e20;
+.time-status {
+    display: block;
+    font-size: 0.8rem;
+    color: #888;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+/* Grid de Notícias */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.news-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    border-top: 4px solid #2e7d32;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.read-more {
+    color: #2e7d32;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
 }
 
 footer {
     text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
+    padding: 40px;
+    background: #1a1a1a;
+    color: #888;
+    margin-top: 50px;
 }
