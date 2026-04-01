@@ -3,39 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundo do Futebol ⚽</title>
+    <title>Arena Futebol | Notícias e Resultados</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Fonte moderna do Google -->
+    <link href="https://googleapis.com" rel="stylesheet">
 </head>
 <body>
 
-    <header>
-        <h1>Placar do Final de Semana</h1>
+    <nav class="navbar">
+        <div class="logo">ARENA ⚽</div>
+        <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Tabela</a></li>
+            <li><a href="#">Notícias</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>O Melhor do Futebol</h1>
+        <p>Acompanhe resultados, notícias e tabelas em tempo real.</p>
     </header>
 
     <main class="container">
-        <section class="card-jogo">
-            <div class="time">
-                <img src="https://placeholder.com" alt="Time A">
-                <span>Time da Casa</span>
+        <h2 class="section-title">Próximas Partidas</h2>
+        
+        <div class="match-card">
+            <div class="team">
+                <img src="https://flaticon.com" alt="Time A">
+                <span>Flamengo</span>
             </div>
-            <div class="placar">
-                <strong>0</strong> <span>vs</span> <strong>0</strong>
+            <div class="score">
+                <span class="time-status">DOM - 16:00</span>
+                <div class="vs">VS</div>
             </div>
-            <div class="time">
-                <span>Visitante</span>
-                <img src="https://placeholder.com" alt="Time B">
+            <div class="team">
+                <span>Palmeiras</span>
+                <img src="https://flaticon.com" alt="Time B">
             </div>
-        </section>
+        </div>
 
-        <section class="noticias">
-            <h2>Últimas Notícias</h2>
-            <p>Confira as transferências e os resultados dos principais campeonatos.</p>
-            <a href="#" class="btn-futebol">Ver Classificação</a>
+        <section class="news-grid">
+            <div class="news-item">
+                <h3>Mercado da Bola</h3>
+                <p>Confira as últimas transferências do futebol europeu.</p>
+                <a href="#" class="read-more">Ler mais →</a>
+            </div>
+            <div class="news-item">
+                <h3>Libertadores</h3>
+                <p>Veja os confrontos definidos para as oitavas de final.</p>
+                <a href="#" class="read-more">Ler mais →</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Meu Site de Futebol no GitHub</p>
+        <p>&copy; 2026 Arena Futebol - Criado por João Vitor</p>
     </footer>
 
 </body>
